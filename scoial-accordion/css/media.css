@@ -1,0 +1,47 @@
+@media (max-width: 950px) {
+
+  .social-accordion__tab-list{
+    height: auto;
+  }
+
+  .social-accordion__tab{
+    display: block;
+    width: 100%;
+    border-bottom: solid 3px #ececec;
+    background-color: #fff;
+  }
+
+  .social-accordion__tab:last-of-type{
+    border-bottom: 0;
+  }
+
+  .social-accordion__tab:hover{
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .social-accordion__tab-content{
+    width: 85%;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .social-accordion{
+    width: 100%;
+  }
+  .social-accordion__tab-list{
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .social-accordion__tab{
+    height: auto;
+  }
+
+  .social-accordion__tab-content{
+    height: auto;
+    width: 90%;
+    padding: 10px;
+  }
+}
