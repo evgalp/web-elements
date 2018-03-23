@@ -18,8 +18,6 @@ class Modal {
     this.modalWrapper.classList.remove('ui-modal-wrappper--active-modal');
   }
 
-
-
 }
 
 const m1 = new Modal('modal-1');

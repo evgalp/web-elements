@@ -14,6 +14,8 @@ body{
   position: relative;
   width: 100%;
   min-height: 55vw;
+  /* min-height: 100vh; */
+
   overflow: hidden;
 }
 
@@ -83,11 +85,11 @@ body{
   background-color: #fdab00;
   width: 5px;
   top: 0;
-  left: 50%;
+  left: 50.5%;
   z-index: 3;
 }
 
-.split-section__split--skewed{
+.split-section--skewed .split-section__split{
   top: 50%;
   transform: rotate(30deg) translateY(-50%);
   height: 200%;
@@ -103,6 +105,10 @@ body{
 .split-section--skewed .split-section__layer--top .split-section__content-wrapper {
   transform: skew(30deg);
   margin-left: 1000px;
+}
+
+.split-section--fullsize-img .split-section__content-img{
+  width: 100%;
 }
 
 @media(max-width: 768px) {
