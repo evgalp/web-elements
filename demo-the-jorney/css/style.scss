@@ -10,6 +10,9 @@ body {
   img{
     max-width: 100%;
   }
+  ul{
+    padding: 0;
+  }
 }
 
 .header{
@@ -25,6 +28,7 @@ body {
   }
   .menu__list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
     margin: 0;
@@ -135,19 +139,16 @@ body {
   padding: 0;
   width: 100%;
   overflow: hidden;
-
   .gallery{
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
     margin-bottom: -4px;
-
-    // max-height:
     .gallery__image{
       margin: 0;
       padding: 0;
       width: 33.33%;
-      max-height: 250px;
+      max-height: 350px;
       margin-top: -4px;
       overflow: hidden;
       position: relative;
@@ -155,7 +156,6 @@ body {
         max-width: 100%;
         overflow: hidden;
         transition: .5s ease;
-        transform: scale(1.05);
         &:hover{
           cursor: pointer;
           transform: scale(1.1);
@@ -196,15 +196,17 @@ body {
 .banner-features{
   .features{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     .feature{
       background: #f8f8f8;
       color: #333;
       border: 1px solid #333;
-      margin: 10px;
+      margin: 10px 5px;
       padding: 10px 20px;
-      width: 33%;
+      max-width: 450px;
       .feature__image{
         font-size: 100px;
         text-align: center;
