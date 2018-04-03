@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Regular.ttf") format("ttf");
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body img {
+  max-width: 100%;
+}
+
+.header {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .menu {
+  width: 60%;
+}
+
+.header .menu__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+}
+
+.header .menu__item {
+  padding: 20px 0;
+  margin: 0 10px;
+}
+
+.header .menu__link {
+  padding: 20px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .2s ease;
+  color: #ececec;
+  opacity: .7;
+}
+
+.header .menu__link:hover {
+  opacity: 1;
+}
+
+.section {
+  display: flex;
+  padding: 20px 20px;
+}
+
+.section.section--full-height {
+  min-height: 100vh;
+}
+
+.section.section--parallax {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.section.section--painted {
+  background-color: #f8f8f8;
+}
+
+.section-content {
+  padding: 0 20px;
+  color: #333;
+}
+
+.section-content__heading {
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.section-content__paragraph {
+  line-height: 1.4;
+}
+
+.columns-1 .columns-1__child {
+  width: 100%;
+  text-align: justify;
+}
+
+.columns-2 .columns-2__child {
+  width: 50%;
+  text-align: justify;
+}
+
+.section-home {
+  background-image: url("../img/home-dawn.jpg");
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-home .main-title {
+  margin-top: 35vh;
+}
+
+.section-home .main-title__title {
+  font-size: 50px;
+  color: #fff;
+  margin: 0;
+}
+
+.section-home .main-title__separator {
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  width: 150px;
+  margin: 20px 0;
+}
+
+.section-home .main-title__tagline {
+  color: #fff;
+}
+
+.section-home .call-to-scroll {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 35px;
+  transition: .2s ease;
+}
+
+.section-home .call-to-scroll:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.section-two {
+  background-image: url("../img/active-activity-adventure.jpg");
+}
+
+.section-gallery {
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-gallery .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-bottom: -4px;
+}
+
+.section-gallery .gallery .gallery__image {
+  margin: 0;
+  padding: 0;
+  width: 33.33%;
+  margin-top: -4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-gallery .gallery .gallery__image img {
+  max-width: 100%;
+  overflow: hidden;
+  transition: .4s ease;
+}
+
+.section-gallery .gallery .gallery__image img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.banner-features .features {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.banner-features .features .feature {
+  background: #f8f8f8;
+  color: #333;
+  border: 1px solid #333;
+  margin: 10px;
+  padding: 10px 20px;
+  width: 33%;
+}
+
+.banner-features .features .feature .feature__image {
+  font-size: 100px;
+  text-align: center;
+}
+
+.banner-features .features .feature .feature__title {
+  font-size: 25px;
+  text-align: center;
+}
+
+.banner-features .features .feature .feature__desription {
+  padding: 0;
+  line-height: 1.4;
+}
