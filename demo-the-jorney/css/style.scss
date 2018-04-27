@@ -93,6 +93,10 @@ body {
   .columns-2__child{
     width: 50%;
     text-align: justify;
+    &--vertical-middle{
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
@@ -156,6 +160,7 @@ body {
         max-width: 100%;
         overflow: hidden;
         transition: .5s ease;
+        transform: scale(1.05);
         &:hover{
           cursor: pointer;
           transform: scale(1.1);

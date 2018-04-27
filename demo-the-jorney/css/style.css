@@ -101,6 +101,11 @@ body ul {
   text-align: justify;
 }
 
+.columns-2 .columns-2__child--vertical-middle {
+  display: flex;
+  align-items: center;
+}
+
 .section-home {
   background-image: url("../img/home-dawn.jpg");
   flex-direction: column;
@@ -173,6 +178,7 @@ body ul {
   max-width: 100%;
   overflow: hidden;
   transition: .5s ease;
+  transform: scale(1.05);
 }
 
 .section-gallery .gallery .gallery__image img:hover {
