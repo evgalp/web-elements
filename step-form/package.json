@@ -1,0 +1,15 @@
+{
+  "name": "step-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "form.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/",
+    "test": "echo Form folder"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
