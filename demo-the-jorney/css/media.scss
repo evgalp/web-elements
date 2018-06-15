@@ -1,3 +1,5 @@
+// media.css
+
 @media(max-width: 1200px){
   .banner-features{
     .features{
@@ -57,5 +59,44 @@
 }
 
 @media(max-width: 600px){
+  .header{
+    .menu__item{
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  .section-gallery{
+    .gallery{
+      .gallery__image{
+        width: 100%;
+        max-height: 350px;
+      }
+    }
+  }
+  .section-content{
+    &__heading{
+      font-size: 35px;
+    }
+  }
+  .features-title{
+    font-size: 35px;
+  }
+  .contacts-form{
+    width: 95%;
+    .input-group{
+      flex-direction: column;
+      .input-group-addon{
+        width: 100% !important;
+        margin-bottom: 10px;
+      }
+      .form-control{
+        width: 100%;
+      }
 
+    }
+    .send-button{
+      width: 100% !important;
+    }
+  }
 }

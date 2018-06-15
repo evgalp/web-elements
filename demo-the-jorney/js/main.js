@@ -2,12 +2,8 @@ class Gallery {
   constructor(galleryId, lightboxId) {
     this.gallery = document.getElementById(`${galleryId}`);
     this.galleryLightbox = document.getElementById(`${lightboxId}`);
-
-
     this.gallery.addEventListener('click', this.getCurrentImage.bind(this));
-
     this.galleryLightbox.addEventListener('click', this.hideLightbox.bind(this));
-
   }
 
   getCurrentImage(e){

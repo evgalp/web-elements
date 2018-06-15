@@ -3,8 +3,13 @@
   src: url("../font/Roboto-Regular.ttf") format("ttf");
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body img {
@@ -25,7 +30,7 @@ body ul {
 }
 
 .header .menu {
-  width: 60%;
+  width: 80%;
 }
 
 .header .menu__list {
@@ -57,6 +62,7 @@ body ul {
 
 .section {
   display: flex;
+  align-items: flex-start;
   padding: 20px 20px;
 }
 
@@ -84,7 +90,7 @@ body ul {
   width: 100%;
   text-align: center;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 45px;
 }
 
 .section-content__paragraph {
@@ -104,6 +110,7 @@ body ul {
 .columns-2 .columns-2__child--vertical-middle {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .section-home {
@@ -140,6 +147,7 @@ body ul {
   text-align: center;
   margin-bottom: 35px;
   transition: .2s ease;
+  text-decoration: none;
 }
 
 .section-home .call-to-scroll:hover {
@@ -216,6 +224,13 @@ body ul {
   font-size: 25px;
 }
 
+.features-title {
+  font-size: 45px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
 .banner-features .features {
   display: flex;
   justify-content: space-around;
@@ -246,4 +261,75 @@ body ul {
 .banner-features .features .feature .feature__desription {
   padding: 0;
   line-height: 1.4;
+}
+
+.section.section-contacts {
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/active-activity-adventure.jpg");
+  background-size: cover;
+}
+
+.section.section-contacts .contacts-form {
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.section.section-contacts .contacts-form .section-content__heading {
+  margin: 30px 0;
+}
+
+.section.section-contacts .input-group {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.section.section-contacts .input-group .input-group-addon {
+  width: 20%;
+}
+
+.section.section-contacts .input-group .input-group-addon--start {
+  margin-top: 5px;
+  align-self: flex-start;
+}
+
+.section.section-contacts .input-group .form-control {
+  flex-grow: 1;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.section.section-contacts .input-group textarea.form-control {
+  min-height: 150px;
+  line-height: 25px;
+  padding-top: 5px;
+}
+
+.section.section-contacts .input-group--end {
+  text-align: right;
+}
+
+.section.section-contacts .send-button {
+  align-self: flex-end;
+  width: 30%;
+  height: 50px;
+  background-color: #1C9963;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 25px;
+  transition: all .3s ease;
+}
+
+.section.section-contacts .send-button:hover {
+  cursor: pointer;
+  opacity: .8;
 }
